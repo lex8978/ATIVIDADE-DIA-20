@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    inteiro n1,n2, resul, soma
+    escreva("Qual o valor de A ")
+    leia(n1)
+    escreva("Qual o valor de B ")
+    leia(n2)
+   soma = n1+n2 
+   resul=soma*soma
+   escreva(resul)
+  }
+}
