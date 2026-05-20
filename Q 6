@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    cadeia nome
+    real n1, n2, n3, mf
+    escreva("Digite seu nome ")
+    leia(nome)
+    escreva("Digite a sua nota em Português ")
+    leia(n1)
+    escreva("Digite a sua nota de Matematica ")
+    leia(n2)
+    escreva("Digite a sua nota de conhecimento gerais ")
+    leia(n3)
+    mf = (n1 + n2 + n3) / 3
+    se(mf >= 7.0){
+    escreva("Candidato aprovado")
+    }
+    senao{
+      escreva("Digite candidato reprovado")
+    }
+    
+  }
+}
