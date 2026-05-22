@@ -1,0 +1,36 @@
+programa {
+  funcao inicio() {
+    inteiro opcao
+    real saldo = 0
+    real deposito
+
+    enquanto(opcao != 4){
+      escreva("\n MENU")
+      escreva("\n1 Ver Saldo")
+      escreva("\n2 Realizar depósito")
+      escreva("\n3 Atendimento em andamento")
+      escreva("\n4 Encerrar atendimento ")
+      leia(opcao)
+       escolha(opcao){
+        caso 1:
+          escreva("\nSaldo atual: R$ ", saldo)
+          pare
+        caso 2:
+          escreva("\nDigite o valor do deposito: ")
+          leia(deposito)
+          saldo = saldo + deposito
+          pare
+
+          escreva("\nDeposito realizado!")
+        caso 3:
+          escreva("\nAtendimento em andamento")
+          pare
+        caso 4:
+          escreva("\nAtendimento encerrado")
+          pare
+        caso contrario:
+          escreva("Opcao invalida")
+       }
+    }
+  }
+}
