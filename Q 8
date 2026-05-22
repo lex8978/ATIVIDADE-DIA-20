@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+   inteiro senha = 2025
+   inteiro tentativa = 1
+   inteiro digi
+
+   enquanto(tentativa <= 3){
+    escreva("Digite a senha ")
+    leia(digi)
+    se(digi == senha){
+      escreva("Acesso liberado")
+    }
+    tentativa = tentativa + 1
+   }
+   se(digi != senha){
+    escreva("Acesso bloqueado")
+   }
+
+
+  }
+}
