@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+
+    inteiro contador = 1
+    inteiro nota
+    inteiro maiorIgual4 = 0
+    inteiro menor4 = 0
+
+    enquanto(contador <= 6){
+
+      escreva("Digite a nota do cliente (1 a 5): ")
+      leia(nota)
+
+      se(nota >= 4){
+        maiorIgual4 = maiorIgual4 + 1
+      }
+      senao{
+        menor4 = menor4 + 1
+      }
+
+      contador = contador + 1
+    }
+
+    escreva("\nClientes com nota maior ou igual a 4: ", maiorIgual4)
+    escreva("\nClientes com nota menor que 4: ", menor4)
+
+  }
+}
